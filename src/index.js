@@ -38,14 +38,15 @@ const navigateTo = url => {
 
 const router = async () => {
     const routes = [
+        { path: "/", view: Dashboard },
         { path: "/dashboard", view: Dashboard },
         { path: "/agenda", view: Agenda },
         { path: "/presenters", view: Presenters },
         { path: "/signOut", view: signOut },
         { path: "/attendees", view: Attendees },
         { path: "/sponsors", view: Sponsors },
-        { path: "/profile", view: Profile },
-        { path: "/", view: signOut }
+        { path: "/profile", view: Profile }
+        // { path: "/", view: signOut }
     ];
 
     // Test each route for potential match
