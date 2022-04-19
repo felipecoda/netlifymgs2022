@@ -90,8 +90,8 @@ export default class extends AbstractView {
             </svg>
             </p>
         </div>
-        <div class="p-6 bg-yellow-300">   
-            <p class="text-slate-800 dark:text-gray-300 font-medium mb-2">
+        <div class="p-6 pt-5 bg-yellow-300">   
+            <p class="text-red-600 dark:text-gray-300 text-sm font-bold mb-2">
             June 15, 2022 — 2:30PM
             </p>
             <ul>
