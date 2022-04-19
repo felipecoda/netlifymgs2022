@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+  </head>
+  <body class="bg-blue-500">
+    <!-- =============== Container ================ -->
+    <div class="">
+
+          <!-- =============== Navigation ================ -->
+      <div class="navigation bg-blue-600">
+          <div class="logo grid ">
+            <img src="logo-white.png" alt="Logo" class="place-self-center" />
+          </div>
+
+        <ul>
+          <!-- <li class="logo">
+            <img src="logo-white.png" alt="Logo" class=" " />
+          </li> -->
+
+          <li class="flex flex-row items-center">
+           <div class="title"><a href="/dashboard" class="nav__link" id="dashboard" data-link>
+             <div class="icon"><ion-icon data="dashboard" name="home-outline" data-link data-ico></ion-icon></div>
+             <span data-link>Dashboard</span></a></div>
+          </li>
+
+          <li class="flex flex-row items-center">
+           <div class="title"><a href="/agenda" class="nav__link" id="agenda" data-link>
+             <div class="icon"><ion-icon data="agenda" name="calendar-outline" data-link data-ico></ion-icon></div>
+             <span data-link>Agenda</span></a></div>
+          </li>
+
+          <li class="flex flex-row items-center">
+           <div class="title"><a href="/presenters" class="nav__link" id="presenters" data-link>
+             <div class="icon"><ion-icon data="presenters" name="mic-outline" data-link data-ico></ion-icon></div>
+             <span data-link>Pesenters</span></a></div>
+          </li>
+
+          <li class="flex flex-row items-center">
+           <div class="title"><a href="/attendees" class="nav__link" id="attendees" data-link>
+             <div class="icon"><ion-icon data="attendees" name="people-outline" data-link data-ico></ion-icon></div>
+             <span data-link>Attendees</span></a></div>
+          </li>
+
+          <li class="flex flex-row items-center">
+           <div class="title"><a href="/sponsors" class="nav__link" id="sponsors" data-link>
+             <div class="icon"><ion-icon data="sponsors" name="cash-outline" data-link data-ico></ion-icon></div>
+             <span data-link>Sponsors</span></a></div>
+          </li>
+
+          <li class="flex flex-row items-center">
+           <div class="title"><a href="/profile" class="nav__link" id="profile" data-link>
+             <div class="icon"><ion-icon data="profile" name="person-outline" data-link data-ico></ion-icon></div>
+             <span data-link>Profile</span></a></div>
+          </li>
+
+          <li class="flex flex-row items-center">
+           <div class="title"><a href="/signOut" class="nav__link" id="sign-out" data-link>
+             <div class="icon"><ion-icon data="sign-out" name="log-out-outline"></ion-icon></div>
+             <span data-link>Sign out</span></a></div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- ========================= Main ==================== -->
+      <div class="">
+          <div class="main bg-blue-500 pb-6 border-0 border-red-400 min-h-full">
+                <div class="flex mx-8 mt-6 mb-2 items-center space-between border-0 border-red-400">
+                    <div class="toggle2 relative">
+                      <div id="arrowLeft" class="arrowLeft absolute -top-4 -left-2">
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" class="svg-email"><path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg>
+                      </div>
+                      <div id="arrowRight" class="arrowRight absolute -top-4 -left-2 bg-blue-500 z-10 hidden">
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" class="svg-email"><path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg>
+                      </div>
+                    </div>
+                  <div class="flex dark:bg-gray-800 items-center ml-auto animate-fade-in"> 
+                    <img src="logo-white.png" alt="Logo" class="w-12 p-2 mr-2 self-center" />  
+                      <h4 class="text-xl slate-100 font-bold dark:text-blue-100">MediaGrowth Summit 2022</h4>       
+                  </div>
+                </div>
+                <div id="app" class=""></div>               
+                </div>
+          </div>
+      </div>
+    </div>
+    <!-- =========== Scripts =========  -->
+    <script>
+      // Menu Toggle
+      let toggle2 = document.querySelector(".toggle2");
+      let navigation = document.querySelector(".navigation");
+      let main = document.querySelector(".main");
+      let logo = document.querySelector(".logo");
+      let arrowLeft = document.querySelector(".arrowLeft");
+      let arrowRight = document.querySelector(".arrowRight");
+
+      toggle2.onclick = function () {
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+        logo.classList.toggle("active");
+
+        arrowRight.classList.toggle("vis");
+        
+        //console.log(arrowRight);
+      };
+    </script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
