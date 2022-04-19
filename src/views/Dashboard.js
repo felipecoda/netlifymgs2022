@@ -248,7 +248,7 @@ export default class extends AbstractView {
                 </div>
             </li>                        
         </ul>
-        <a href="/agenda" class="nav__link" id="agenda" data-link><button class="btn-default p-2 px-4 text-sm bg-blue-600">
+        <a href="#" class="nav__link" id="agenda" data-link><button class="btn-default p-2 px-4 text-sm bg-blue-600">
                         View full agenda <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
@@ -277,7 +277,7 @@ export default class extends AbstractView {
                     <p class="text-blue-300 dark:text-gray-300 font-medium mb-4 p-0">
                     Meet the sponsors that make MediaGrowth Summit possible.
                     </p>
-                    <a href="/sponsors" class="nav__link" id="sponsors" data-link>
+                    <a href="#" class="nav__link" id="sponsors" data-link>
                     <button class="btn-default p-2 px-4 text-sm">
                                     View sponsors <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -298,7 +298,7 @@ export default class extends AbstractView {
                     <p class="text-blue-300 dark:text-gray-300 font-medium mb-4 p-0">
                     Read about the presenters for each individual session.
                     </p>
-                    <a href="/presenters" class="nav__link" id="presenters" data-link>
+                    <a href="#" class="nav__link" id="presenters" data-link>
                     <button class="btn-default p-2 px-4 text-sm">
                                     View sponsors <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -319,7 +319,7 @@ export default class extends AbstractView {
                     <p class="text-blue-300 dark:text-gray-300 font-medium mb-4 p-0">
                     See the full summit schedule and read about each individual session.
                     </p>
-                    <a href="/agenda" class="nav__link" id="sponsors" data-link>
+                    <a href="#" class="nav__link" id="sponsors" data-link>
                     <button class="btn-default p-2 px-4 text-sm">
                         View presenters <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
