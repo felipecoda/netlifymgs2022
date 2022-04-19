@@ -124,7 +124,7 @@ export default class extends AbstractView {
         <div class="text-slate-100 dark:text-white text-2xl font-bold mb-2 w-full">
             Next...
 
-            <p class="text-blue-300 dark:text-gray-300 text-lg font-medium w-full">
+            <p class="text-blue-300 dark:text-gray-300 text-base font-medium w-full">
         Break — 2:55 to 3:30 PM
         </p>
         
