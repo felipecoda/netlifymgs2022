@@ -76,9 +76,9 @@ export default class extends AbstractView {
  
 
             <div class="w-full pb-0 ml-auto text-gray-500 md:w-1/3">
-                <button type="" class="py-2 px-4 bg-blue-800 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+                <div type="" class="py-2 px-4 bg-blue-800 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
                     Save
-                </button>
+                </div>
             </div>
 </form>
 <!-- CONTENT ROW ends -->
